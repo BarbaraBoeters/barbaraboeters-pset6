@@ -12,6 +12,11 @@
 		1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B8971DF6EC020077CD1D /* Main.storyboard */; };
 		1A81B89B1DF6EC020077CD1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B89A1DF6EC020077CD1D /* Assets.xcassets */; };
 		1A81B89E1DF6EC020077CD1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B89C1DF6EC020077CD1D /* LaunchScreen.storyboard */; };
+		1A81B8A61DF6F5C60077CD1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */; };
+		1A81B8CF1DFAA1B30077CD1D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */; };
+		1A81B8FE1DFABC5E0077CD1D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */; };
+		1ACACC351DFAD5BB00C6D94C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACC341DFAD5BB00C6D94C /* Recipe.swift */; };
+		1E36A76493F1E675ACD47EB3 /* Pods_barbaraboeters_pset6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DF7F8F3A2BFB7E6CC73A43 /* Pods_barbaraboeters_pset6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		1A81B89A1DF6EC020077CD1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A81B89D1DF6EC020077CD1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A81B89F1DF6EC020077CD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		1ACACC341DFAD5BB00C6D94C /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		41DF7F8F3A2BFB7E6CC73A43 /* Pods_barbaraboeters_pset6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_barbaraboeters_pset6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EDABAFBB6F51FDADB0A0D4 /* Pods-barbaraboeters-pset6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-barbaraboeters-pset6.debug.xcconfig"; path = "Pods/Target Support Files/Pods-barbaraboeters-pset6/Pods-barbaraboeters-pset6.debug.xcconfig"; sourceTree = "<group>"; };
+		BD94C979F479C44935DF2132 /* Pods-barbaraboeters-pset6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-barbaraboeters-pset6.release.xcconfig"; path = "Pods/Target Support Files/Pods-barbaraboeters-pset6/Pods-barbaraboeters-pset6.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E36A76493F1E675ACD47EB3 /* Pods_barbaraboeters_pset6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				1A81B8921DF6EC020077CD1D /* barbaraboeters-pset6 */,
 				1A81B8911DF6EC020077CD1D /* Products */,
+				7F36B55235A37AB93C296CAD /* Pods */,
+				58E625275DDD95508B8056CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,35 @@
 		1A81B8921DF6EC020077CD1D /* barbaraboeters-pset6 */ = {
 			isa = PBXGroup;
 			children = (
+				1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */,
+				1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */,
 				1A81B8931DF6EC020077CD1D /* AppDelegate.swift */,
 				1A81B8951DF6EC020077CD1D /* ViewController.swift */,
+				1ACACC341DFAD5BB00C6D94C /* Recipe.swift */,
 				1A81B8971DF6EC020077CD1D /* Main.storyboard */,
+				1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */,
 				1A81B89A1DF6EC020077CD1D /* Assets.xcassets */,
 				1A81B89C1DF6EC020077CD1D /* LaunchScreen.storyboard */,
 				1A81B89F1DF6EC020077CD1D /* Info.plist */,
 			);
 			path = "barbaraboeters-pset6";
+			sourceTree = "<group>";
+		};
+		58E625275DDD95508B8056CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41DF7F8F3A2BFB7E6CC73A43 /* Pods_barbaraboeters_pset6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F36B55235A37AB93C296CAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90EDABAFBB6F51FDADB0A0D4 /* Pods-barbaraboeters-pset6.debug.xcconfig */,
+				BD94C979F479C44935DF2132 /* Pods-barbaraboeters-pset6.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A81B8A21DF6EC020077CD1D /* Build configuration list for PBXNativeTarget "barbaraboeters-pset6" */;
 			buildPhases = (
+				97F702013D2217FC62EEB533 /* 📦 Check Pods Manifest.lock */,
 				1A81B88C1DF6EC020077CD1D /* Sources */,
 				1A81B88D1DF6EC020077CD1D /* Frameworks */,
 				1A81B88E1DF6EC020077CD1D /* Resources */,
+				4FC13D9DAA25E538206C27F2 /* 📦 Embed Pods Frameworks */,
+				2EB1D2A25B3D43C3A22CDD9E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A81B89E1DF6EC020077CD1D /* LaunchScreen.storyboard in Resources */,
+				1A81B8A61DF6F5C60077CD1D /* GoogleService-Info.plist in Resources */,
 				1A81B89B1DF6EC020077CD1D /* Assets.xcassets in Resources */,
 				1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */,
 			);
@@ -132,13 +172,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EB1D2A25B3D43C3A22CDD9E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-barbaraboeters-pset6/Pods-barbaraboeters-pset6-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC13D9DAA25E538206C27F2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-barbaraboeters-pset6/Pods-barbaraboeters-pset6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97F702013D2217FC62EEB533 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A81B88C1DF6EC020077CD1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A81B8FE1DFABC5E0077CD1D /* LogInViewController.swift in Sources */,
 				1A81B8961DF6EC020077CD1D /* ViewController.swift in Sources */,
+				1A81B8CF1DFAA1B30077CD1D /* CustomCell.swift in Sources */,
 				1A81B8941DF6EC020077CD1D /* AppDelegate.swift in Sources */,
+				1ACACC351DFAD5BB00C6D94C /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +350,14 @@
 		};
 		1A81B8A31DF6EC020077CD1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EDABAFBB6F51FDADB0A0D4 /* Pods-barbaraboeters-pset6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62W6Z49ZST;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks/frameworks",
+				);
 				INFOPLIST_FILE = "barbaraboeters-pset6/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "m.prog.barbaraboeters-pset6";
@@ -272,9 +368,14 @@
 		};
 		1A81B8A41DF6EC020077CD1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD94C979F479C44935DF2132 /* Pods-barbaraboeters-pset6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62W6Z49ZST;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks/frameworks",
+				);
 				INFOPLIST_FILE = "barbaraboeters-pset6/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "m.prog.barbaraboeters-pset6";
@@ -302,6 +403,7 @@
 				1A81B8A41DF6EC020077CD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
