@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5D233B1DFEB8F500CD658C /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */; };
 		1A81B8941DF6EC020077CD1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8931DF6EC020077CD1D /* AppDelegate.swift */; };
 		1A81B8961DF6EC020077CD1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8951DF6EC020077CD1D /* ViewController.swift */; };
 		1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B8971DF6EC020077CD1D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
 		1A81B8901DF6EC020077CD1D /* barbaraboeters-pset6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "barbaraboeters-pset6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A81B8931DF6EC020077CD1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A81B8951DF6EC020077CD1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,12 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */,
-				1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */,
 				1A81B8931DF6EC020077CD1D /* AppDelegate.swift */,
-				1A81B8951DF6EC020077CD1D /* ViewController.swift */,
-				1ACACC341DFAD5BB00C6D94C /* Recipe.swift */,
 				1A81B8971DF6EC020077CD1D /* Main.storyboard */,
 				1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */,
+				1A81B8951DF6EC020077CD1D /* ViewController.swift */,
+				1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */,
+				1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */,
+				1ACACC341DFAD5BB00C6D94C /* Recipe.swift */,
 				1A81B89A1DF6EC020077CD1D /* Assets.xcassets */,
 				1A81B89C1DF6EC020077CD1D /* LaunchScreen.storyboard */,
 				1A81B89F1DF6EC020077CD1D /* Info.plist */,
@@ -229,6 +232,7 @@
 				1A81B8961DF6EC020077CD1D /* ViewController.swift in Sources */,
 				1A81B8CF1DFAA1B30077CD1D /* CustomCell.swift in Sources */,
 				1A81B8941DF6EC020077CD1D /* AppDelegate.swift in Sources */,
+				1A5D233B1DFEB8F500CD658C /* ShowDetailsViewController.swift in Sources */,
 				1ACACC351DFAD5BB00C6D94C /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
