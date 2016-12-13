@@ -24,6 +24,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func searchButton(_ sender: Any) {
         if inputSearch.text != "" {
+            // datasource leegmaken
+            
+            
             var searchFood = inputSearch.text!.replacingOccurrences(of: " ", with: "+")
             // print(searchFood)
             
@@ -89,36 +92,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if segue.identifier == detailSegueIdentifier {
             if let indexRecipe = tableView.indexPathForSelectedRow?.row {
                 let destination = segue.destination as? ShowDetailsViewController
-                print(destination)
-                destination?.recipeName = self.recipes[indexRecipe].title
-                // destination.recipeImage =
-                // destination.webView =
+                //let urlString = self.recipes[indexRecipe] as! String
+                //let data = NSData(contentsOf: NSURL(string: urlString)! as URL)
+                
+                destination?.nameRecipe = self.recipes[indexRecipe].title
+                
+                //destination?.recipeImage.image = UIImage(data: data! as Data)
+                
+                destination?.urlRecipe = self.recipes[indexRecipe].url
             }
         }
     }
-    
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if segue.identifier == detailSegueIdentifier,
-    //            let destination = segue.destination as? ShowDetailsViewController,
-    //            let indexRecipe = tableView.indexPathForSelectedRow?.row
-    //        {
-    //            destination.recipeName = self.recipes[indexRecipe].title
-    //            // destination.recipeImage =
-    //            // destination.somethingwiththiswebview =
-    //        }
-    //    }
-
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == detailSegueIdentifier {
-//            if let indexPath = self.tableView.indexPathForSelectedRow {
-//                let task = ToDoManager.sharedInstance.readList(index: indexPath.row)
-//                // print(task)
-//                //(segue.destination as! DetailViewController).detailItem = task
-//                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-//                controller.detailItem = task
-//            }
-//        }
-//    }
 }
 

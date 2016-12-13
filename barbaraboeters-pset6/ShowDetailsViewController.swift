@@ -15,11 +15,12 @@ class ShowDetailsViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     
     var nameRecipe = String()
-    var urlRecipe = "http://picky-palate.com/2012/09/20/pesto-ranch-crock-pot-chicken-thighs/"
-    // var urlRecipe = String()
+    //var urlRecipe = "http://picky-palate.com/2012/09/20/pesto-ranch-crock-pot-chicken-thighs/"
+    var urlRecipe = String()
     
     override func viewWillAppear(_ animated: Bool) {
         self.recipeName.text = nameRecipe
+        //self.recipeImage.image = urlRecipe
     }
     
     override func viewDidLoad() {
