@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1CD2651E00920600CB781A /* MyRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CD2641E00920600CB781A /* MyRecipes.swift */; };
 		1A5D233B1DFEB8F500CD658C /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */; };
+		1A5D233F1DFFF2C200CD658C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D233E1DFFF2C200CD658C /* GoogleService-Info.plist */; };
+		1A5D234A1E00065D00CD658C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D23491E00065D00CD658C /* Constants.swift */; };
+		1A5D234C1E00074A00CD658C /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D234B1E00074A00CD658C /* MeasurementHelper.swift */; };
+		1A5D234E1E00075E00CD658C /* Appstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D234D1E00075E00CD658C /* Appstate.swift */; };
+		1A5D23511E001E5D00CD658C /* MyRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D23501E001E5D00CD658C /* MyRecipesViewController.swift */; };
+		1A5D23531E00396C00CD658C /* CustomGroceriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D23521E00396C00CD658C /* CustomGroceriesCell.swift */; };
+		1A5D23551E0055AB00CD658C /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D23541E0055AB00CD658C /* GroceryItem.swift */; };
+		1A5D23571E00560600CD658C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D23561E00560600CD658C /* User.swift */; };
 		1A81B8941DF6EC020077CD1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8931DF6EC020077CD1D /* AppDelegate.swift */; };
 		1A81B8961DF6EC020077CD1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8951DF6EC020077CD1D /* ViewController.swift */; };
 		1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B8971DF6EC020077CD1D /* Main.storyboard */; };
 		1A81B89B1DF6EC020077CD1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B89A1DF6EC020077CD1D /* Assets.xcassets */; };
 		1A81B89E1DF6EC020077CD1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B89C1DF6EC020077CD1D /* LaunchScreen.storyboard */; };
-		1A81B8A61DF6F5C60077CD1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */; };
 		1A81B8CF1DFAA1B30077CD1D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */; };
 		1A81B8FE1DFABC5E0077CD1D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */; };
 		1ACACC351DFAD5BB00C6D94C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACC341DFAD5BB00C6D94C /* Recipe.swift */; };
@@ -21,7 +29,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1CD2641E00920600CB781A /* MyRecipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipes.swift; sourceTree = "<group>"; };
 		1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
+		1A5D233E1DFFF2C200CD658C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A5D23461E00012900CD658C /* barbaraboeters-pset6.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "barbaraboeters-pset6.entitlements"; sourceTree = "<group>"; };
+		1A5D23491E00065D00CD658C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1A5D234B1E00074A00CD658C /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
+		1A5D234D1E00075E00CD658C /* Appstate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appstate.swift; sourceTree = "<group>"; };
+		1A5D23501E001E5D00CD658C /* MyRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipesViewController.swift; sourceTree = "<group>"; };
+		1A5D23521E00396C00CD658C /* CustomGroceriesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGroceriesCell.swift; sourceTree = "<group>"; };
+		1A5D23541E0055AB00CD658C /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		1A5D23561E00560600CD658C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A81B8901DF6EC020077CD1D /* barbaraboeters-pset6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "barbaraboeters-pset6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A81B8931DF6EC020077CD1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A81B8951DF6EC020077CD1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +47,6 @@
 		1A81B89A1DF6EC020077CD1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A81B89D1DF6EC020077CD1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A81B89F1DF6EC020077CD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		1ACACC341DFAD5BB00C6D94C /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -71,17 +88,26 @@
 		1A81B8921DF6EC020077CD1D /* barbaraboeters-pset6 */ = {
 			isa = PBXGroup;
 			children = (
-				1A81B8A51DF6F5C60077CD1D /* GoogleService-Info.plist */,
+				1A5D23461E00012900CD658C /* barbaraboeters-pset6.entitlements */,
+				1A5D233E1DFFF2C200CD658C /* GoogleService-Info.plist */,
 				1A81B8931DF6EC020077CD1D /* AppDelegate.swift */,
 				1A81B8971DF6EC020077CD1D /* Main.storyboard */,
+				1A5D23541E0055AB00CD658C /* GroceryItem.swift */,
+				1A5D23561E00560600CD658C /* User.swift */,
 				1A81B8FD1DFABC5E0077CD1D /* LogInViewController.swift */,
+				1A5D23501E001E5D00CD658C /* MyRecipesViewController.swift */,
+				1A5D23491E00065D00CD658C /* Constants.swift */,
 				1A81B8951DF6EC020077CD1D /* ViewController.swift */,
 				1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */,
 				1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */,
+				1A5D23521E00396C00CD658C /* CustomGroceriesCell.swift */,
 				1ACACC341DFAD5BB00C6D94C /* Recipe.swift */,
 				1A81B89A1DF6EC020077CD1D /* Assets.xcassets */,
 				1A81B89C1DF6EC020077CD1D /* LaunchScreen.storyboard */,
 				1A81B89F1DF6EC020077CD1D /* Info.plist */,
+				1A5D234B1E00074A00CD658C /* MeasurementHelper.swift */,
+				1A5D234D1E00075E00CD658C /* Appstate.swift */,
+				1A1CD2641E00920600CB781A /* MyRecipes.swift */,
 			);
 			path = "barbaraboeters-pset6";
 			sourceTree = "<group>";
@@ -140,6 +166,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 62W6Z49ZST;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -167,7 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A81B89E1DF6EC020077CD1D /* LaunchScreen.storyboard in Resources */,
-				1A81B8A61DF6F5C60077CD1D /* GoogleService-Info.plist in Resources */,
+				1A5D233F1DFFF2C200CD658C /* GoogleService-Info.plist in Resources */,
 				1A81B89B1DF6EC020077CD1D /* Assets.xcassets in Resources */,
 				1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */,
 			);
@@ -228,12 +259,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5D23571E00560600CD658C /* User.swift in Sources */,
+				1A5D234C1E00074A00CD658C /* MeasurementHelper.swift in Sources */,
+				1A5D234E1E00075E00CD658C /* Appstate.swift in Sources */,
+				1A5D23511E001E5D00CD658C /* MyRecipesViewController.swift in Sources */,
 				1A81B8FE1DFABC5E0077CD1D /* LogInViewController.swift in Sources */,
 				1A81B8961DF6EC020077CD1D /* ViewController.swift in Sources */,
 				1A81B8CF1DFAA1B30077CD1D /* CustomCell.swift in Sources */,
 				1A81B8941DF6EC020077CD1D /* AppDelegate.swift in Sources */,
 				1A5D233B1DFEB8F500CD658C /* ShowDetailsViewController.swift in Sources */,
+				1A5D23531E00396C00CD658C /* CustomGroceriesCell.swift in Sources */,
 				1ACACC351DFAD5BB00C6D94C /* Recipe.swift in Sources */,
+				1A1CD2651E00920600CB781A /* MyRecipes.swift in Sources */,
+				1A5D23551E0055AB00CD658C /* GroceryItem.swift in Sources */,
+				1A5D234A1E00065D00CD658C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +396,7 @@
 			baseConfigurationReference = 90EDABAFBB6F51FDADB0A0D4 /* Pods-barbaraboeters-pset6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "barbaraboeters-pset6/barbaraboeters-pset6.entitlements";
 				DEVELOPMENT_TEAM = 62W6Z49ZST;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,6 +415,7 @@
 			baseConfigurationReference = BD94C979F479C44935DF2132 /* Pods-barbaraboeters-pset6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "barbaraboeters-pset6/barbaraboeters-pset6.entitlements";
 				DEVELOPMENT_TEAM = 62W6Z49ZST;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

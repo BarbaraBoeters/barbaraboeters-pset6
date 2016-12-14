@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var recipes: Array<Recipe> = Array<Recipe>()
+    var my_recipes: [MyRecipes] = []
     let detailSegueIdentifier = "showDetails"
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var inputSearch: UISearchBar!
@@ -19,14 +21,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Get my_recipes from userdefaults
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
+//    
+//    @IBAction func addButton(_ sender: Any) {
+//        
+//        // add recipe to my_recipes
+//        // set my_recipes to userdefaults
+//        
+//    }
     
     @IBAction func searchButton(_ sender: Any) {
         if inputSearch.text != "" {
             // datasource leegmaken
-            
-            
+            recipes.removeAll()
+            self.tableView.reloadData()
+
             var searchFood = inputSearch.text!.replacingOccurrences(of: " ", with: "+")
             // print(searchFood)
             
@@ -92,16 +106,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if segue.identifier == detailSegueIdentifier {
             if let indexRecipe = tableView.indexPathForSelectedRow?.row {
                 let destination = segue.destination as? ShowDetailsViewController
-                //let urlString = self.recipes[indexRecipe] as! String
-                //let data = NSData(contentsOf: NSURL(string: urlString)! as URL)
-                
                 destination?.nameRecipe = self.recipes[indexRecipe].title
-                
-                //destination?.recipeImage.image = UIImage(data: data! as Data)
-                
                 destination?.urlRecipe = self.recipes[indexRecipe].url
             }
         }
+//        if segue.identifier == "showMyRecipes" {
+//            if let indexRecipe = tableView.indexPathForSelectedRow?.row {
+//                let destination = segue.destination as? MyRecipesViewController
+//                destination?.nameRecipe = self.recipes[indexRecipe].title
+//            }
+//        }
     }
 }
 
