@@ -5,6 +5,9 @@
       location = "group:README.MD">
    </FileRef>
    <FileRef
+      location = "group:REVIEW.md">
+   </FileRef>
+   <FileRef
       location = "group:barbaraboeters-pset6.xcodeproj">
    </FileRef>
    <FileRef
