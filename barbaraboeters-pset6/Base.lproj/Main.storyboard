@@ -398,13 +398,12 @@
                                     <outlet property="delegate" destination="oRO-U2-e9w" id="mok-rB-9R0"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-0o-1R2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-0o-1R2">
                                 <rect key="frame" x="298" y="64" width="77" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="GGr-h3-1YR"/>
                                     <constraint firstAttribute="height" constant="44" id="ZVO-SQ-OxR"/>
                                 </constraints>
-                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addButtonDidTouch:" destination="oRO-U2-e9w" eventType="touchUpInside" id="cdn-Kv-KCY"/>
                                 </connections>

@@ -17,7 +17,6 @@
 		1A81B8941DF6EC020077CD1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8931DF6EC020077CD1D /* AppDelegate.swift */; };
 		1A81B8961DF6EC020077CD1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8951DF6EC020077CD1D /* ViewController.swift */; };
 		1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B8971DF6EC020077CD1D /* Main.storyboard */; };
-		1A81B89B1DF6EC020077CD1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B89A1DF6EC020077CD1D /* Assets.xcassets */; };
 		1A81B89E1DF6EC020077CD1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A81B89C1DF6EC020077CD1D /* LaunchScreen.storyboard */; };
 		1A81B8CF1DFAA1B30077CD1D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */; };
 		1ACACC351DFAD5BB00C6D94C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACC341DFAD5BB00C6D94C /* Recipe.swift */; };
@@ -37,7 +36,6 @@
 		1A81B8931DF6EC020077CD1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A81B8951DF6EC020077CD1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A81B8981DF6EC020077CD1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A81B89A1DF6EC020077CD1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A81B89D1DF6EC020077CD1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A81B89F1DF6EC020077CD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				1AD3ACF71E03DA38007C736F /* Models */,
 				1A5F447A1E0199C0008E2F30 /* Controllers */,
 				1A5F447B1E0199D9008E2F30 /* Layouts */,
-				1A81B89A1DF6EC020077CD1D /* Assets.xcassets */,
 				1A81B89F1DF6EC020077CD1D /* Info.plist */,
 			);
 			path = "barbaraboeters-pset6";
@@ -211,7 +208,6 @@
 			files = (
 				1A81B89E1DF6EC020077CD1D /* LaunchScreen.storyboard in Resources */,
 				1A5D233F1DFFF2C200CD658C /* GoogleService-Info.plist in Resources */,
-				1A81B89B1DF6EC020077CD1D /* Assets.xcassets in Resources */,
 				1A81B8991DF6EC020077CD1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
