@@ -2,6 +2,8 @@
 //  User.swift
 //  barbaraboeters-pset6
 //
+//  Saves the userdata into Firebase.
+//
 //  Created by Barbara Boeters on 13-12-16.
 //  Copyright © 2016 Barbara Boeters. All rights reserved.
 //
@@ -23,5 +25,4 @@ struct User {
         self.uid = uid
         self.email = email
     }
-    
 }

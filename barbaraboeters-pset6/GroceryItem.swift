@@ -2,6 +2,8 @@
 //  GroceryItem.swift
 //  barbaraboeters-pset6
 //
+//  Object which saves the grocery items into Firebase.
+//
 //  Created by Barbara Boeters on 13-12-16.
 //  Copyright © 2016 Barbara Boeters. All rights reserved.
 //
@@ -41,5 +43,4 @@ struct GroceryItem {
             "completed": completed
         ]
     }
-    
 }

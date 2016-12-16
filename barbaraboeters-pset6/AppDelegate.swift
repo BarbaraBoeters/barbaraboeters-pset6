@@ -2,6 +2,8 @@
 //  AppDelegate.swift
 //  barbaraboeters-pset6
 //
+//  Inserted extra code that functions as the Firebase connection and the State Restoration.
+//
 //  Created by Barbara Boeters on 06-12-16.
 //  Copyright © 2016 Barbara Boeters. All rights reserved.
 //
@@ -14,11 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        UIApplication.shared.statusBarStyle = .lightContent
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
+        
+        self.window?.makeKeyAndVisible()
+
+        return true
+    }
+    
+    func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+        return true
+    }
+    
+    func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
         return true
     }
 

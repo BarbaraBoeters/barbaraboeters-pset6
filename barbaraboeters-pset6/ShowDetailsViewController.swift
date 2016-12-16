@@ -14,16 +14,15 @@ import UIKit
 
 class ShowDetailsViewController: UIViewController {
 
-    // Outlets
+    // MARK: Outlets
     @IBOutlet weak var recipeName: UILabel!
     @IBOutlet weak var webView: UIWebView!
     
-    // Properties
+    // MARK: Properties
     var nameRecipe = String()
     var urlRecipe = String()
     
     override func viewWillAppear(_ animated: Bool) {
-        // Printing name of the recipe
         self.recipeName.text = nameRecipe
     }
     

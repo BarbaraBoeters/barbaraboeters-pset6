@@ -2,6 +2,9 @@
 //  CustomCell.swift
 //  barbaraboeters-pset6
 //
+//  TableViewCell in which you edit the cell from ViewController
+//  It shows the title of the recipe and an image. 
+//
 //  Created by Barbara Boeters on 09-12-16.
 //  Copyright © 2016 Barbara Boeters. All rights reserved.
 //
@@ -10,17 +13,16 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
+    // MARK: Outlets
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var viewImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
     
     func getPoster(url: String) {

@@ -66,6 +66,8 @@
 				1A81B8951DF6EC020077CD1D /* ViewController.swift */,
 				1A5D23501E001E5D00CD658C /* MyRecipesViewController.swift */,
 				1A5D233A1DFEB8F500CD658C /* ShowDetailsViewController.swift */,
+				1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */,
+				1A5D23521E00396C00CD658C /* CustomGroceriesCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -106,8 +108,6 @@
 				1AD3ACF71E03DA38007C736F /* Models */,
 				1A5F447A1E0199C0008E2F30 /* Controllers */,
 				1A5F447B1E0199D9008E2F30 /* Layouts */,
-				1A81B8CD1DFA9BE80077CD1D /* CustomCell.swift */,
-				1A5D23521E00396C00CD658C /* CustomGroceriesCell.swift */,
 				1A81B89A1DF6EC020077CD1D /* Assets.xcassets */,
 				1A81B89F1DF6EC020077CD1D /* Info.plist */,
 			);

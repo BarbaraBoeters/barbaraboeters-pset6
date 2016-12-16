@@ -2,8 +2,11 @@
 //  LoggingInViewController.swift
 //  barbaraboeters-pset6
 //
-//  The very first viewcontroller in charge of logging in or signing up
-//  Use of Firebase. 
+//  The first viewcontroller in charge of logging in or signing up.
+//  Use of state restoration which saves the textfield where the e-mail is written in.
+//  It also uses Userdefaults to save the e-mailaddress which was used the last time.
+//  Saves the userdata in Firebase.
+//  Use of alerts when the user didn't enter an email/password.
 //
 //  Created by Barbara Boeters on 14-12-16.
 //  Copyright © 2016 Barbara Boeters. All rights reserved.
@@ -14,16 +17,17 @@ import Firebase
 
 class LoggingInViewController: UIViewController {
 
-    // Constants
+    // Mark: Properties
     let loginToList = "LoginToList"
     
-    // Outlets
+    // Mark: Outlets
     @IBOutlet weak var inputEmail: UITextField!
     @IBOutlet weak var inputPassword: UITextField!
+    @IBOutlet weak var lastUser: UILabel!
+    @IBOutlet weak var usedLabel: UILabel!
     
-    // Actions
+    // Mark: Actions
     @IBAction func logInButton(_ sender: Any) {
-        
         if inputEmail.text != "" && inputPassword.text != "" {
             FIRAuth.auth()!.signIn(withEmail: inputEmail.text!, password: inputPassword.text!)
         } else {
@@ -33,8 +37,7 @@ class LoggingInViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-        // FIRAuth.auth()!.signIn(withEmail: inputEmail.text!, password: inputPassword.text!)
-
+        UserDefaults.standard.set(inputEmail.text!, forKey: "email")
     }
     
     @IBAction func signUpButton(_ sender: Any) {
@@ -43,21 +46,18 @@ class LoggingInViewController: UIViewController {
                                       preferredStyle: .alert)
         
         let saveAction = UIAlertAction(title: "Save",
-                                       style: .default) { action in
-                                        // 1
-                                        let emailField = alert.textFields![0]
-                                        let passwordField = alert.textFields![1]
-                                        
-                                        // 2
-                                        FIRAuth.auth()!.createUser(withEmail: emailField.text!,
-                                                                   password: passwordField.text!) { user, error in
-                                                                    if error == nil {
-                                                                        // 3
-                                                                        FIRAuth.auth()!.signIn(withEmail: self.inputEmail.text!,
-                                                                                               password: self.inputPassword.text!)
-                                                                    }
-                                        }
+           style: .default) { action in
+            let emailField = alert.textFields![0]
+            let passwordField = alert.textFields![1]
+            FIRAuth.auth()!.createUser(withEmail: emailField.text!,
+               password: passwordField.text!) { user, error in
+                if error == nil {
+                    FIRAuth.auth()!.signIn(withEmail: self.inputEmail.text!,
+                                           password: self.inputPassword.text!)
+                }
+            }
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel",
                                          style: .default)
         
@@ -75,8 +75,22 @@ class LoggingInViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    // MARK: State restoration
+    
+    override func encodeRestorableState(with coder: NSCoder) {
+        if let email = inputEmail.text {
+            coder.encode(email, forKey: "email")
+        }
+        super.encodeRestorableState(with: coder)
+    }
+    
+    override func decodeRestorableState(with coder: NSCoder) {
+        inputEmail.text = coder.decodeObject(forKey: "email") as! String?
+        super.decodeRestorableState(with: coder)
+    }
 }
-// Uitleg
+
 extension LoggingInViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -88,19 +102,28 @@ extension LoggingInViewController: UITextFieldDelegate {
         }
         return true
     }
-    
-    // Create an authentication observer using addStateDidChangeListener(_:).Test the value of user. Upon successful user authentication, user is populated with the user’s information. If authentication fails, the variable is nil. On successful authentication, perform the segue. Pass nil as the sender.
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 1
+        
+        // Create an authentication observer using addStateDidChangeListener(_:).
         FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
-            // 2
             if user != nil {
-                // 3
                 self.performSegue(withIdentifier: self.loginToList, sender: nil)
             }
         }
-        inputEmail.text = ""
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         inputPassword.text = ""
+        
+        // Using Userdefault to save data on the phone itself.
+        if let email = UserDefaults.standard.string(forKey: "email") {
+            usedLabel.text = "Last used by:"
+            lastUser.text = email
+        } else {
+            usedLabel.text = ""
+            lastUser.text = ""
+        }
     }
 }
