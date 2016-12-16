@@ -2,6 +2,10 @@
 //  ShowDetailsViewController.swift
 //  barbaraboeters-pset6
 //
+//  Displaying the details when clicking on the recipy in the viewcontroller.
+//  Showing the title of the recipe in a label and the
+//  link to the website with the list of ingrediënts in a webview.
+//
 //  Created by Barbara Boeters on 12-12-16.
 //  Copyright © 2016 Barbara Boeters. All rights reserved.
 //
@@ -10,23 +14,22 @@ import UIKit
 
 class ShowDetailsViewController: UIViewController {
 
+    // Outlets
     @IBOutlet weak var recipeName: UILabel!
-    @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var webView: UIWebView!
     
+    // Properties
     var nameRecipe = String()
-    //var urlRecipe = "http://picky-palate.com/2012/09/20/pesto-ranch-crock-pot-chicken-thighs/"
     var urlRecipe = String()
     
     override func viewWillAppear(_ animated: Bool) {
+        // Printing name of the recipe
         self.recipeName.text = nameRecipe
-        //self.recipeImage.image = urlRecipe
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Using the url from the API to populate the webview
         let url = NSURL (string: urlRecipe)
         let requestObj = NSURLRequest(url: url! as URL)
         webView.loadRequest(requestObj as URLRequest);
@@ -34,18 +37,5 @@ class ShowDetailsViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

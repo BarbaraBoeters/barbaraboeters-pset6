@@ -11,6 +11,7 @@ import UIKit
 class CustomGroceriesCell: UITableViewCell {
 
     @IBOutlet weak var newItem: UILabel!
+    @IBOutlet weak var userName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +20,6 @@ class CustomGroceriesCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 

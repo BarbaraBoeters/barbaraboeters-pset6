@@ -20,25 +20,16 @@ class CustomCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
     func getPoster(url: String) {
-        
         print(url)
-        
         URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
-            
             guard let data = data, error == nil else { return }
-            
             DispatchQueue.main.async {
                 self.viewImage.image = UIImage(data: data)
             }
-            
         }).resume()
-        
     }
-
-
 }
