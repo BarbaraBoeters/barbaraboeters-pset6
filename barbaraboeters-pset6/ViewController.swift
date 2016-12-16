@@ -38,10 +38,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             recipes.removeAll()
             self.tableView.reloadData()
             
-            var searchFood = inputSearch.text!.replacingOccurrences(of: " ", with: "+")
+            let searchFood = inputSearch.text!.replacingOccurrences(of: " ", with: "+")
             let API_KEY = "58e05dcdb2c818e392f22e629832ad1d"
             let myUrl = URL(string: "http://food2fork.com/api/search?key=\(API_KEY)&q=\(searchFood)")
-            var request = URLRequest(url: myUrl!)
+            let request = URLRequest(url: myUrl!)
             
             API(request: request)
         }
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
 
             guard let data = data, error == nil else {
-                print("error getting the data ")
+                self.presentAlert(message: "Error while getting the data")
                 return
             }
             
@@ -59,7 +59,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
                 // Convert data to JSON.
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
-                    print(json)
                     
                     // Get access to the main thread and the interface elements:
                     DispatchQueue.main.async {
@@ -70,7 +69,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                             self.recipes.append(newRecipe)
                         }
 
-                        print(self.recipes)
                         self.tableView.reloadData()
                     }
                 } else {
